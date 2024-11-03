@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="My Digital Showcase - Personal Portfolio"
+    />
+    <title>Digital Showcase</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Home Section -->
+    <header id="home">
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#aboutme">About me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </nav>
+      <div class="intro">
+        <img
+          src="profile.jpg"
+          alt="Photo"
+          style="height: 120px; width: 100px; border-radius: 50%"
+        />
+        <h1><b>Hello, I,m Sudipta</b></h1>
+        <p>Welcome to my personal Website</p>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="aboutme">
+      <h2>About me</h2>
+      <p>I'm a B.Tech Electrical Engineer.</p>
+      <p>Right Now I am a fresher</p>
+    </section>
+
+    <!-- skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVASCRIPT</li>
+        <li>JQUERY</li>
+        <li>REACT</li>
+        <li>BOOTSTRAP</li>
+        <li>ES6</li>
+        <li>WORDPRESS</li>
+        <li>GIT & GITHUB</li>
+      </ul>
+    </section>
+
+    <!-- portfolio Section -->
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="portfolio-item">
+        <h3>Virtual Internship on Google Cloud Generative AI</h3>
+        <p>
+          Generative AI models can take inputs such as text, image, audio,
+          video, and code and generate new content into any of the modalities
+          mentioned. <br />
+          Practical study on Generative AI, Large Language Model(LLM),
+          Responsible AI, Prompt Design in Vertex AI, Vector search and
+          Embeddings, MLOps, Transformer and Bert Model, Encoder-Decoder
+          Architecture, Attention Mechanism, Gemini.
+        </p>
+        <a
+          href="https://www.linkedin.com/posts/sudipta-sardar-40956a228_aicteinternship-aicte-eduskills-activity-7238642650210258944-8q67?utm_source=share&utm_medium=member_desktop"
+          target="_blank"
+          >View The Certificate</a
+        >
+      </div>
+    </section>
+
+    <!-- From Section -->
+     <section id="contact">
+        <h2>Contact Me</h2>
+     <form  id="contactFrom">
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" id="name" required>
+     
+     
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email">
+    
+     
+        <label for="message">Message:</label><br>
+        <textarea name="message" id="message" required></textarea>
+     
+
+     <button type="submit">Submit</button>
+    </form>
+    <p id="status"></p>
+     </section>
+  </body>
+  <script src="script.js"></script>
+</html>
