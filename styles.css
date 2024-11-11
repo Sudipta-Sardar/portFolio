@@ -9,11 +9,15 @@ body{
     line-height: 1.9;
     background-color: #f4f4f4;
     color: #333;
+    
 }
+
 header{
     text-align: center;
     background-color: rgb(152, 239, 251);
-    padding: 2rem 0;
+    background-image: linear-gradient(rgb(237, 231, 58), rgba(23, 210, 95, 0.985));
+    padding: 50px 0;
+    
     
 }
 
@@ -31,11 +35,48 @@ header nav ul li a{
 }
 
 section{
-    padding: 2rem;
-    background-color: #eee;
-    margin: 2rem 0;
+    margin: 0 auto;
+    padding: 2em;
+    width: 900px;
+    background: #1c1f2b;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    
+}
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+section::after, section::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    animation: 2s spin linear infinite;
 }
 
+section::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+@keyframes spin {
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
 #skills ul {
     list-style-type: none;
 }
